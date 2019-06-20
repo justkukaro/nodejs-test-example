@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1 show page
+	each row in data
+		each item in row
+			| #{item}
+			| &nbsp;
+		br
