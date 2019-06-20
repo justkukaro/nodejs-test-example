@@ -10,10 +10,6 @@ const db = new sqlite3.Database('./db/my.db', sqlite3.OPEN_READWRITE, (err) => {
     }
 });
 
-/* GET users listing. */
-
-
-
 router.get('/', function (req, res, next) {
     const query = `SELECT * FROM person`;
     db.serialize();
